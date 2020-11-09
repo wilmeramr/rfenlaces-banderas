@@ -191,7 +191,7 @@ namespace Davicom
                 switch (pictureBox.Tag.ToString())
                 {
                     case "pacecar_inactiva":
-                        data[0] = 1;
+                        data[0] = (byte) (circuitoActivo == 5? 254 : circuitoActivo);
                         data[1] = 1;
                         _port.Write(data, 0, data.Length);
                         pacecar.Image = Properties.Resources.pacecar_activa;
@@ -199,7 +199,7 @@ namespace Davicom
                         NewMethod("pacecar_activa", 1);
                         break;
                     case "pacecar_activa":
-                        data[0] = 1;
+                        data[0] = (byte)(circuitoActivo == 5 ? 254 : circuitoActivo); ;
                         data[1] = 6;
                         _port.Write(data, 0, data.Length);
                         pacecar.Image = Properties.Resources.pacecar_inactiva;
