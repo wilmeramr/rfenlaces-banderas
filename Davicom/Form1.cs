@@ -314,17 +314,25 @@ namespace Davicom
         }
         private void BanderaNegra()
         {
+            byte[] data = new byte[2];
+
             var circuitoActual3 = circuitos.ElementAt(circuitoActivo - 1).Split(',');
             foreach (var item in circuitoActual3)
             {
                 switch (item)
                 {
                     case "pacecar_activa":
+                        data[0] = 1;
+                        data[1] = 6;
+                        _port.Write(data, 0, data.Length);
                         pacecar.Image = Properties.Resources.pacecar_inactiva;
                         pacecar.Tag = "pacecar_inactiva";
                         NewMethod("pacecar_inactiva", 1);
                         break;
                     case "rojas_activa":
+                        data[0] = 1;
+                        data[1] = 6;
+                        _port.Write(data, 0, data.Length);
                         rojas.Image = Properties.Resources.rojas_inactiva;
                         rojas.Tag = "rojas-inactiva";
                         NewMethod("rojas-inactiva", 2);
@@ -332,12 +340,18 @@ namespace Davicom
                         break;
 
                     case "verde_activa":
+                        data[0] = 1;
+                        data[1] = 6;
+                        _port.Write(data, 0, data.Length);
                         verdes.Image = Properties.Resources.verde_inactiva;
                         verdes.Tag = "verde-inactiva";
                         NewMethod("verde-inactiva", 3);
 
                         break;
                     case "amarillo_activa":
+                        data[0] = 1;
+                        data[1] = 6;
+                        _port.Write(data, 0, data.Length);
                         amarillas.Image = Properties.Resources.amarillo_inactiva;
                         amarillas.Tag = "amarillo-inactiva";
                         NewMethod("amarillo-inactiva", 4);
@@ -345,6 +359,9 @@ namespace Davicom
                         break;
 
                     case "azul_activa":
+                        data[0] = 1;
+                        data[1] = 6;
+                        _port.Write(data, 0, data.Length);
                         azules.Image = Properties.Resources.azul_inactiva;
                         azules.Tag = "azul-inactiva";
                         NewMethod("azul-inactiva", 5);
