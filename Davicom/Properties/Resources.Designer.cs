@@ -103,6 +103,16 @@ namespace Davicom.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap davicom {
+            get {
+                object obj = ResourceManager.GetObject("davicom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap negra_activa {
             get {
                 object obj = ResourceManager.GetObject("negra_activa", resourceCulture);

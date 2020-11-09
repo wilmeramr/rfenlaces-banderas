@@ -45,6 +45,7 @@
             this.cmbPorts = new MetroFramework.Controls.MetroComboBox();
             this.btnConectar = new MetroFramework.Controls.MetroButton();
             this.btnDesconectar = new MetroFramework.Controls.MetroButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.negras)).BeginInit();
@@ -53,6 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.verdes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rojas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacecar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroPanel1
@@ -235,7 +237,7 @@
             // 
             this.cmbPorts.FormattingEnabled = true;
             this.cmbPorts.ItemHeight = 24;
-            this.cmbPorts.Location = new System.Drawing.Point(62, 76);
+            this.cmbPorts.Location = new System.Drawing.Point(62, 93);
             this.cmbPorts.Name = "cmbPorts";
             this.cmbPorts.Size = new System.Drawing.Size(121, 30);
             this.cmbPorts.TabIndex = 2;
@@ -243,7 +245,7 @@
             // btnConectar
             // 
             this.btnConectar.Highlight = true;
-            this.btnConectar.Location = new System.Drawing.Point(212, 78);
+            this.btnConectar.Location = new System.Drawing.Point(212, 95);
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Size = new System.Drawing.Size(87, 34);
             this.btnConectar.Style = MetroFramework.MetroColorStyle.White;
@@ -253,12 +255,21 @@
             // 
             // btnDesconectar
             // 
-            this.btnDesconectar.Location = new System.Drawing.Point(330, 78);
+            this.btnDesconectar.Location = new System.Drawing.Point(330, 95);
             this.btnDesconectar.Name = "btnDesconectar";
-            this.btnDesconectar.Size = new System.Drawing.Size(87, 34);
+            this.btnDesconectar.Size = new System.Drawing.Size(99, 34);
             this.btnDesconectar.TabIndex = 4;
             this.btnDesconectar.Text = "Desconectar";
             this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Davicom.Properties.Resources.davicom;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(292, 123);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -267,9 +278,10 @@
             this.ClientSize = new System.Drawing.Size(1545, 581);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.btnConectar);
-            this.Controls.Add(this.cmbPorts);
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.cmbPorts);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Davicom";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -283,6 +295,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.verdes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rojas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacecar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,6 +319,7 @@
         private MetroFramework.Controls.MetroComboBox cmbPorts;
         private MetroFramework.Controls.MetroButton btnConectar;
         private MetroFramework.Controls.MetroButton btnDesconectar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

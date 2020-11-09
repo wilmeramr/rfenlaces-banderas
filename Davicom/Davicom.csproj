@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\davicom.jpeg" />
     <None Include="Resources\verde-activa.png" />
     <None Include="Resources\rojas-activa.png" />
     <None Include="Resources\negra-activa.png" />
